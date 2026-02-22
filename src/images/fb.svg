@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="30px" height="30px" viewBox="0 0 30 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>fb</title>
+    <g id="網頁" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="登入_影片_學習版" transform="translate(-313, -49)">
+            <g id="header" transform="translate(120, 8)">
+                <g id="fb" transform="translate(193, 41)">
+                    <circle id="橢圓形" fill="#5370AD" cx="15" cy="15" r="15"></circle>
+                    <image id="點陣圖" x="1.42857143" y="2.85714286" width="22.8571429" height="22.8571429" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAABQCAYAAACOEfKtAAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAUKADAAQAAAABAAAAUAAAAAAx4ExPAAACn0lEQVR4Ae3YsUpcQRQG4NkYghoICRIIksbCJmAh2KRI0sQuL2PnC6T2CazyBDZ2Nj6EjWUiWLlNSLJYbP6DCEH2v/wzs7s3c/0HDuK5Z/be+Tx771xT8rCABSxgAQtYwAIWsIAFLGABC1jAAhkCo4zaQZVOp9MXWNBKLGo0Go1LFzcoQKC8BMQXxAfEDmILsY4IrM4BxEFZdC724UHAvUN8Q0wQRePhZz6K3yG1ijhC3Bap/TOpFOxp6cS+52Htb3ANp4jdPq+lSUDgvQbaOWK7T7w495O+LyD3/MB7hjkniN7x4tqbA8Q1HyLex8X/D6OpRze6bxNol4jYmsx1lG5jWuvAA6jNHa/mL9FMB6L74oF3jdioWTCb+xg68OOi8Biqkm/pK/xJWdCya1oC3MvEmaL+GLGPeItYi68pGzg+7IF74AUiZ3wdtkjm6iA3ztFDbfwnZuGjpafwLTRyXj1X8XWdLFqwJcC4p8kj7nVycUVhSw+RimUubqoBK20NaMBKgcrp7kADVgpUTs/ZV1WeavZ0bHhfzT6SfmMn8occy053nCc+6yfOFfvM7LGUvVLXVcXbRdfxJR37DMCzknP5Hnin9r0EL+a4A+/knqMDf5UgugNTuinFC3ADpvSjpPPu5xjQgPe9UPzzqngmJroDUzJgTQdhbvEWJs7rDvQ9sLL/DNgvYO9vIuryc9+ZsTleytp8D1T/gqTOgARGTRtQlSJ1BiQwatqAqhSpMyCBUdMGVKVInQEJjJo2oCpF6gxIYNS0AVUpUmdAAqOmDahKkToDEhg1bUBVitQZkMCoaQOqUqTOgARGTRtQlSJ1BiQwatqAqhSpMyCBUdMGVKVInQEJjJo2oCpF6gxIYNS0AVUpUmdAAqOmDahKkbq/l8k+KxoVZDAAAAAASUVORK5CYII="></image>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

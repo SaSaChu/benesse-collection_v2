@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>巧連智 - 數位典藏學習網</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- 自定義樣式 -->
+    <link href="css/ex_plan.css" rel="stylesheet">
+    <link href="css/unit.css" rel="stylesheet">
+    <link href="css/signup.css" rel="stylesheet">
+    
+
+    <!-- 共用外部 font 檔案 -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="shortcut icon" href="images/favicon.ico" />
+    <link rel="bookmark" href="images/favicon.ico" />
+</head>
+<body>
+  <header>
+    <!-- 導航欄 -->
+		<div class="navbar-section">
+			<div class="container">
+				<nav class="navbar navbar-expand-lg navbar-light navbar-gradient">
+					<!-- 左側區域：品牌和社群連結 -->
+					<div class="col-6 col-lg-5">
+						<div class="navbar-left">
+							<a class="navbar-brand d-none d-lg-block" href="index.html" title="巧連智">
+								<img src="images/s-logo.svg" alt="巧連智" height="50">
+							</a>
+
+							<div class="social-links">
+								<a href="https://www.facebook.com/BenesseTaiwan/?fref=ts" class="social-link" target="_black"><img src="images/fb.svg"></a>
+								<a href="https://www.youtube.com/channel/UCnjadOj5qlKXsTAXPSwc67A/featured" class="social-link" target="_black"><img src="images/youtube.svg"></a>
+								<a href="https://www.benesse.com.tw/html/line/index.html" class="social-link" target="_black"><img src="images/line.svg"></a>
+								<!-- <a href="https://www.benesse.com.tw/html/digit/app.html" class="social-link" target="_black"><img src="images/app.svg"></a> -->
+							</div>
+						</div>
+					</div>
+
+					<!-- 右側區域：導航選項 -->
+					<div class="col-6 col-lg-7">
+						<div class="navbar-right justify-content-end">
+							<div class="action-buttons">
+								<a href="#" class="nav-link d-none d-lg-block">關於數位典藏學習網</a>
+								<a href="#" class="nav-link d-none d-lg-block">訂閱方案</a>
+                <a href="#" class="nav-link d-none d-lg-block">常見問題</a>
+                <a href="#" class="fs-6 nav-btn nav-btn-login" data-bs-toggle="modal" data-bs-target="#loginbox">首頁</a>
+							</div>
+
+              <!-- 手機-list按鈕 -->
+							<button class="btn btn-mobile-menu d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+								<i class="bi bi-list align-baseline"></i>
+							</button>
+
+              <!-- 手機選單 -->
+							<div class="offcanvas offcanvas-end d-lg-none" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+								<div class="offcanvas-header">
+									<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+								</div>
+								<div class="offcanvas-body">
+									<div class="action-buttons me-0">
+										<a href="#" class="nav-btn btn-square orange w-100" data-bs-toggle="modal" data-bs-target="#loginModal">登入</a>
+									</div>
+
+									<div class="action-links text-start">
+										<a href="#" class="nav-link text-brown"><img src="images/star-p.svg" class="w-10 me-2">關於數位典藏學習網</a>
+										<a href="#" class="nav-link text-brown"><img src="images/star-pur.svg" class="w-10 me-2">訂閱方案</a>
+                    <a href="#" class="nav-link text-brown"><img src="images/star-pur.svg" class="w-10 me-2">常見問題</a>
+									</div>
+
+									<div class="action-category">
+										<div class="category-item my-2">
+											<a href="#">
+												<img src="images/s-menu01.png" alt="月刊有聲書" class="img-fluid">
+											</a>
+										</div> 
+										<div class="category-item my-2">
+											<a href="#">
+												<img src="images/s-menu02.png" alt="月刊有聲書" class="img-fluid">
+											</a>
+										</div> 
+										<div class="category-item my-2">
+											<a href="#">
+												<img src="images/s-menu03.png" alt="月刊有聲書" class="img-fluid">
+											</a>
+										</div> 
+										<div class="category-item my-2">
+											<a href="#">
+												<img src="images/s-menu04.png" alt="月刊有聲書" class="img-fluid">
+											</a>
+										</div> 
+										<div class="category-item my-2">
+											<a href="#">
+												<img src="images/s-menu05.png" alt="月刊有聲書" class="img-fluid">
+											</a>
+										</div> 
+									</div>
+
+									<div class="action-social text-center">
+										<a href="https://www.facebook.com/BenesseTaiwan/?fref=ts" class="social-link" target="_black"><img src="images/fb.svg"></a>
+                    <a href="https://www.youtube.com/channel/UCnjadOj5qlKXsTAXPSwc67A/featured" class="social-link" target="_black"><img src="images/youtube.svg"></a>
+                    <a href="https://www.benesse.com.tw/html/line/index.html" class="social-link" target="_black"><img src="images/line.svg"></a>
+                    <!-- <a href="https://www.benesse.com.tw/html/digit/app.html" class="social-link" target="_black"><img src="images/app.svg"></a> -->
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</nav>
+			</div>
+		</div>
+
+    <!-- 標題區域 -->
+		<div class="hero-section text-center">
+			<div class="container">
+				<h1>
+					<a href="index.html"><img src="images/logo.webp" alt="巧連智數位典藏學習網" class="img-fluid"></a>
+				</h1>
+			</div>
+
+      <div class="cloud-bg">
+			  <img src="images/cloud-s.webp" alt="雲朵" class="img-fluid">
+		  </div>
+		</div>
+  </header>
+
+  <!-- 主要內容 -->
+  <main class="py-5">
+    <div class="container loginbox-650">
+      <div class="row mx-auto mb-5 justify-content-evenly">
+        <div class="col-12 mb-2">
+          <a class="planboxs-link blue active h-100">
+          	<div class="title-slash">OOOOOO團購</div>
+          	<p title="年費" class="price">999</p>
+          	<div class="text-start">
+          		<div class="border-brown-bottom mb-2"></div>
+          		<p class="position-relative star-left15 nav-link text-brown mb-1"><img src="images/star-b.svg" class="star-list w-2 me-1 align-baseline">訂閱期間可觀看網站上所有數位內容，含有聲書、影片、音檔、遊戲等，到期即無法再觀看。</p>
+							<p class="position-relative star-left15 nav-link text-brown mb-1"><img src="images/star-b.svg" class="star-list w-2 me-1 align-baseline">一個帳號可支援最多3台裝置使用。</p>
+              <p class="position-relative star-left15 nav-link text-brown mb-1"><img src="images/star-b.svg" class="star-list w-2 me-1 align-baseline">團購方案為單次訂閱優惠，不會自動續訂。
+              </p>
+              <p class="position-relative star-left15 nav-link text-brown mb-1"><img src="images/star-b.svg" class="star-list w-2 me-1 align-baseline">正在訂閱中若欲訂購團購方案，則需先取消自動續訂即可訂購。
+              </p>
+              <p class="position-relative star-left15 nav-link text-brown mb-1"><img src="images/star-b.svg" class="star-list w-2 me-1 align-baseline">數位內容開通後即視為使用，無7天鑑賞期，故無法提供退訂服務。
+              </p>
+          	</div>
+          </a>
+        </div>
+      </div>
+			
+      <div class="row mx-auto">
+        <div class="col-6">
+          <a href="#" class="title-slash01 br15 login-btn-space" data-bs-toggle="modal" data-bs-target="#loginbox">登入</a>
+        </div>
+        <div class="col-6">
+          <a href="ex_plan_sign_step01.html" class="title-slash02 br15 login-btn-space">註冊</a>
+        </div>
+        <p class="py-3 text-use">曾使用過典藏網或曾註冊帳號，請直接<a href="" data-bs-toggle="modal" data-bs-target="#loginbox">登入</a></p>
+      </div>
+    </div>
+  </main>
+
+  <!-- 頁尾 -->
+  <footer id="member-footer"></footer>
+
+  <!-- 登入Modal -->
+  <div class="modal fade" id="loginbox" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content list-bg-unit01">
+        <div class="modal-body">
+          <div class="row">
+            <!-- 登 入 -->
+            <div class="col-12 px-4">
+              <h5 class="modal-title text-brown mb-3">登 入
+              </h5>
+              <div class="mb-3 text-start">
+                <label for="loginbox1" class="form-label float-start text-brown">帳號：</label>
+                <input type="email" class="form-control border-brown-box" id="loginbox1">
+                <small class="text-danger">*請輸入註冊使用之手機號碼或email</small>
+              </div>
+              <div class="mb-3 text-start">
+                <label for="loginbox1" class="form-label float-start text-brown">密碼：</label>
+                <input type="email" class="form-control border-brown-box" id="loginbox1">
+
+                <!-- 忘記密碼 -->
+                <small class="link-primary float-end mt-2"  data-bs-target="#forgetpwbox" data-bs-toggle="modal" data-bs-dismiss="modal"><a><i class="bi bi-lock-fill align-baseline me-1"></i>忘記密碼</a></small>
+              </div>
+
+              <a href="ex_plan_step01.html" class="my-3 w-100 btn-square orange">登 入</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- <div class="modal-footer">
+          <a href="search.html" class="btn-square orange">搜 尋</a>
+        </div> -->
+      </div>
+    </div>
+  </div>
+    
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- 自定義 JS -->
+  <script src="js/public.js"></script>
+  <script src="js/banner.js"></script>
+</body>
+</html>

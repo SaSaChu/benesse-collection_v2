@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>巧連智 - 數位典藏學習網 - 巧虎卡通</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <!-- 自定義樣式 -->
+    <link href="css/unit.css" rel="stylesheet">
+    <link href="css/signup.css" rel="stylesheet">
+
+    <!-- 共用外部 font 檔案 -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="shortcut icon" href="images/favicon.ico" />
+    <link rel="bookmark" href="images/favicon.ico" />
+</head>
+<body>
+  <header>
+	  <!-- 導航欄 -->
+		<div class="navbar-section">
+			<div class="container">
+				<nav class="navbar navbar-expand-lg navbar-light navbar-gradient">
+					<!-- 左側區域：品牌和社群連結 -->
+					<div class="col-6 col-lg-5">
+						<div class="navbar-left">
+							<a class="navbar-brand d-none d-lg-block" href="index.html" title="巧連智">
+								<img src="images/s-logo.svg" alt="巧連智" height="50">
+							</a>
+
+							<div class="social-links">
+								<a href="https://www.facebook.com/BenesseTaiwan/?fref=ts" class="social-link" target="_black"><img src="images/fb.svg"></a>
+								<a href="https://www.youtube.com/channel/UCnjadOj5qlKXsTAXPSwc67A/featured" class="social-link" target="_black"><img src="images/youtube.svg"></a>
+								<a href="https://www.benesse.com.tw/html/line/index.html" class="social-link" target="_black"><img src="images/line.svg"></a>
+								<!-- <a href="https://www.benesse.com.tw/html/digit/app.html" class="social-link" target="_black"><img src="images/app.svg"></a> -->
+							</div>
+						</div>
+					</div>
+
+					<!-- 右側區域：導航選項 -->
+					<div class="col-6 col-lg-7">
+						<div class="navbar-right justify-content-end">
+							<div class="action-buttons">
+								<a href="#" class="nav-link d-none d-lg-block">關於數位典藏學習網</a>
+								<a href="#" class="nav-link d-none d-lg-block">訂閱方案</a>
+	              <a href="#" class="nav-link d-none d-lg-block">常見問題</a>
+								<a href="#" class="fs-6 nav-btn nav-btn-login">登入</a>
+								<a href="#" class="fs-6 nav-btn nav-btn-search d-none d-lg-block" data-bs-toggle="modal" data-bs-target="#searchbox">搜尋</a>
+							</div>
+
+	            <!-- 手機-搜尋按鈕 -->
+	            <button class="btn btn-mobile-menu d-lg-none me-2" data-bs-toggle="modal" data-bs-target="#searchbox"><i class="bi bi-search align-baseline"></i>
+	            </button>
+	            <!-- 手機-list按鈕 -->
+							<button class="btn btn-mobile-menu d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+								<i class="bi bi-list align-baseline"></i>
+							</button>
+
+	            <!-- 手機選單 -->
+							<div class="offcanvas offcanvas-end d-lg-none" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+								<div class="offcanvas-header">
+									<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+								</div>
+								<div class="offcanvas-body">
+									<div class="action-buttons me-0">
+										<a href="#" class="nav-btn  btn-square orange w-100">登入</a>
+									</div>
+
+									<div class="action-links text-start">
+										<a href="#" class="nav-link brown"><img src="images/star-p.svg" class="w-10 me-2">關於數位典藏學習網</a>
+										<a href="#" class="nav-link brown"><img src="images/star-pur.svg" class="w-10 me-2">訂閱方案</a>
+	                  <a href="#" class="nav-link brown"><img src="images/star-pur.svg" class="w-10 me-2">常見問題</a>
+									</div>
+
+									<div class="action-category">
+										<div class="category-item my-2">
+											<a href="#">
+												<img src="images/s-menu01.png" alt="月刊有聲書" class="img-fluid">
+											</a>
+										</div> 
+										<div class="category-item my-2">
+											<a href="#">
+												<img src="images/s-menu02.png" alt="月刊有聲書" class="img-fluid">
+											</a>
+										</div> 
+										<div class="category-item my-2">
+											<a href="#">
+												<img src="images/s-menu03.png" alt="月刊有聲書" class="img-fluid">
+											</a>
+										</div> 
+										<div class="category-item my-2">
+											<a href="#">
+												<img src="images/s-menu04.png" alt="月刊有聲書" class="img-fluid">
+											</a>
+										</div> 
+										<div class="category-item my-2">
+											<a href="#">
+												<img src="images/s-menu05.png" alt="月刊有聲書" class="img-fluid">
+											</a>
+										</div> 
+									</div>
+
+									<div class="action-social text-center">
+										<a href="https://www.facebook.com/BenesseTaiwan/?fref=ts" class="social-link" target="_black"><img src="images/fb.svg"></a>
+	                  <a href="https://www.youtube.com/channel/UCnjadOj5qlKXsTAXPSwc67A/featured" class="social-link" target="_black"><img src="images/youtube.svg"></a>
+	                  <a href="https://www.benesse.com.tw/html/line/index.html" class="social-link" target="_black"><img src="images/line.svg"></a>
+	                  <!-- <a href="https://www.benesse.com.tw/html/digit/app.html" class="social-link" target="_black"><img src="images/app.svg"></a> -->
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</nav>
+			</div>
+		</div>
+
+		<!-- 標題區域 -->
+		<div class="hero-section text-center">
+			<div class="container">
+				<h1>
+					<a href="index.html"><img src="images/logo.webp" alt="巧連智數位典藏學習網" class="img-fluid"></a>
+				</h1>
+			</div>
+			<div class="cloud-bg">
+				<img src="images/cloud-s.webp" alt="雲朵" class="img-fluid">
+			</div>
+		</div>
+	</header>
+
+  <!-- 主要內容 -->
+  <main class="page07 my-3">
+  	<div class="container mt-md-5 mt-3">
+	  	<p class="text-brown fs-4 text-center">巧連智數位典藏學習網 - 隱私條款</p>
+  	</div>
+
+  	<!-- 虛線 -->
+		<div class="container mt-md-5 mt-3">
+			<div class="border-brown2"></div>
+		</div>
+
+		
+
+		<!-- 內容 -->
+		<div class="main-section">
+			<div class="container">
+				<div class="row my-5 justify-content-center">
+					<!-- 內容list -->
+					<div class="col-12 col-lg-8 text-start">
+						<p class="fs-6 fw-light mb-5">
+							親愛的會員，感謝您使用「日商倍樂生公司台北分公司」所製作的巧連智數位典藏學習網。關於您個人的隱私權，我們會以非常嚴謹的態度與具體作為，絕對尊重並予以管理及保護您的個人資料。為了幫助您了解我們是如何蒐集，運用及保護您所提供的個人資料，我們特別在此公開聲明，對外說明我們的隱私權保護政策。敬請您詳細閱讀，並放心使用我們的服務。一旦您提供您的個人資料予本巧連智數位典藏學習網，我們將視為您已經同意該隱私權保護政策之內容。
+						</p>
+
+						<p class="fs-5 fw-bold mb-2">隱私權保護的適用範圍</p>
+						<p class="fs-6 fw-light mb-5">
+						本隱私權保護政策，適用於您在日商倍樂生股份有限公司台北分公司所製作的巧連智數位典藏學習網以及其延伸服務網站（以上統稱為本影音平台）瀏覽時，所涉及的您的個人資料蒐集、運用、處理與保護，但不適用於與本影音平台功能連結出之其他單位或個人經營之網站。當您在這些網站進行瀏覽時，關於個人資料的保護，適用各該網站隱私權保護政策，本影音平台不負任何連帶責任。
+						</p>
+
+						<p class="fs-5 fw-bold mb-2">個人資料的蒐集</p>
+						<p class="fs-6 fw-light mb-5">
+						本影音平台以多種方式（例如，線上填入的方式）從巧連智數位典藏學習網的不同部分蒐集您的個人資料，敬請詳細閱讀以下說明。若您不願提供您的個人資料或不同意本聲明，請立即停止使用本影音平台提供之服務。若您提供您的個人資料予本影音平台，則視為您同意本聲明。
+						</p>
+
+						<p class="fs-5 fw-bold mb-2">註冊會員</p>
+						<p class="fs-6 fw-light mb-5">
+						當您透過本影音平台註冊成為會員時，我們將會收集您的基本資料(如姓名)，家長連絡資料（如行動電話號碼、電子信箱帳號等）等相關資料。收集這些資料之目的，在於確保註冊會員使用權益，以及做註冊密碼通知，並進行整體式的統計與資料分析，以便於提升本影音平台的服務品質，產品內容所用。本公司不會對特定對象進行分析或公開資料。
+						</p>
+
+						<p class="fs-5 fw-bold mb-2">訂閱申請</p>
+						<p class="fs-6 fw-light mb-5">
+						當您透過巧連智數位典藏學習網申請訂閱時，本影音平台將會以線上或離線方式，蒐集您主動提供所訂閱申請所需的基本資料、聯絡基本資料。這些資料僅為了完成您的訂閱手續，以及使用於巧連智銷售服務(活動)的訊息通知。為了針對處理您個人訂單與提供其他相關產品，服務（活動）的訊息，因此我們希望您能夠提供詳細與準確的資料。
+						</p>
+
+						<p class="fs-5 fw-bold mb-2">線上活動</p>
+						<p class="fs-6 fw-light mb-5">
+						當您主動參與本影音平台舉辦的各項線上活動查詢或索取資料時，我們會請您提供子女基本資料（如姓名、生日、性別、排行、入學狀況等），家長基本資料（如家長姓名、公司名稱等），聯絡基本資料（如聯絡住址、電話、行動電話號碼、電子信箱帳號等）等相關資料。其目的乃為通知您參與活動（或抽獎）的結果，遞送所索取的資料，及提供您更優質的產品服務訊息並與您取得聯繫之用。
+						</p>
+
+						<p class="fs-5 fw-bold mb-2">問卷調查</p>
+						<p class="fs-6 fw-light mb-5">
+						當您主動參與本影音平台舉辦的各項線上問卷調查時，我們會請您提供子女基本資料（如巧連智會員編號、姓名、生日、性別、排行、入學狀況等），家長基本資料（如家長姓名、公司名稱等），聯絡基本資料（如聯絡住址、電話、行動電話號碼、電子信箱帳號等）等相關資料。收集這些資料之目的，在於遞送參與問卷調查所給予的贈品，並進行整體式的統計與資料分析，以便於提昇本網站的服務品質，產品內容所用。本公司不會對特定對象進行分析或公開資料。
+						</p>
+
+						<p class="fs-5 fw-bold mb-2">會員資料補登</p>
+						<p class="fs-6 fw-light mb-5">
+						當您主動在本影音平台上進行會員資料修改時，我們會請您提供姓名、行動電話號碼、電子信箱帳號等資料。
+						</p>
+
+						<p class="fs-5 fw-bold mb-2">一般瀏覽</p>
+						<p class="fs-6 fw-light mb-5">
+						當您在本影音平台上使用時，為了評估各個單元的流量行為調查分析，以及供本影音平台依服務或活動設計使用，以便於提升本影音平台的服務品質，產品內容，我們會保留伺服器自行產生的相關記錄，包括您使用的連線設備IP位址，時間，裝置，點選資料記錄等。收集這些記錄的目的僅為進行總量上的分析，不會和特定個人相連繫，也無法將這些記錄和您對應。
+						</p>
+
+						<p class="fs-5 fw-bold mb-2">※ 特別注意事項：</p>
+						<p class="fs-6 fw-light mb-5">
+						● 若您所提供之個人資料有錯誤，不正確情事者，亦不受本聲明之保護。</br>
+						● 如您未滿十八歲，在未給予我們您的個人資料之前，要先得到您的家長或監護人的同意。一旦給予我們您的個人資料之後，我們視為您已取得您的家長或監護人的同意，提供予我們您的個人資料。</br>
+						● 於本隱私權政策所載之各項目的消滅前，本公司將於與該目的有關聯之地區內，處理、利用您所提供之個人資料(包括您與您的子女)。</br>
+						● 倘若您提供之資料中，包含非本人之第三人個人資料（包括但不限於您所屬員工、親友），則您於茲擔保並確認，業已取得該第三人之同意。
+						</p>
+
+						<p class="fs-5 fw-bold mb-2">個人資料的運用</p>
+						<p class="fs-6 fw-light mb-5">
+						本影音平台，以多種方式（例如，線上填入的方式）從巧連智數位典藏學習網的不同部分蒐集您及您子女的個人資料，敬請詳細閱讀以下說明。若您不願提供您的個人資料或不同意本聲明，請立即停止使用本影音平台提供之服務。若您提供您的個人資料予本影音平台，則視為您同意本聲明。
+						</p>
+
+						<p class="fs-5 fw-bold mb-2">註冊會員</p>
+						<p class="fs-6 fw-light mb-5">
+						當您透過本影音平台註冊成為會員時，我們將會收集您的基本資料(如姓名、生日)，家長連絡資料（如行動電話號碼、電子信箱帳號等）等相關資料。主要用於主動通知您註冊的相關訊息與提供更優質的產品服務，以及供內部管理之用。
+						</p>
+
+						<p class="fs-5 fw-bold mb-2">訂閱申請</p>
+						<p class="fs-6 fw-light mb-5">
+						當您透過巧連智數位典藏學習網申請訂閱時，本影音平台以線上或離線方式所蒐集得來的子女基本資料、家長基本資料、聯絡基本資料等相關資訊，主要用於處理您個人訂單與提供更優質的產品服務，以及供內部管理之用。例如，在您已同意的情況下，主動通知您所感興趣的產品資訊或服務內容。另外，聯絡基本資料，主要用於遞送您所訂閱（訂購）之產品及其他相關訊息至您所指定的處所。
+						</p>
+
+						<p class="fs-5 fw-bold mb-2">線上活動</p>
+						<p class="fs-6 fw-light mb-5">
+						當您主動參與本影音平台舉辦的各項線上活動或索取資料而提供的您及您子女的個人資料，本影音平台除了主要作為其活動的依據，如電話，電子信箱帳號及住址等資料則作為通知您參與活動（抽獎等）結果，遞送所索取的資料之外，亦在您已同意的情況下，主動通知您所感興趣的產品資訊或服務內容。
+						</p>
+
+						<p class="fs-5 fw-bold mb-2">問卷調查</p>
+						<p class="fs-6 fw-light mb-5">
+						當您主動參與本影音平台舉辦的各項線上問卷調查時，我們會請您提供子女基本資料、家長基本資料、聯絡基本資料等相關資料。收集這些資料之目的，在於遞送參與問卷調查所給予的贈品等之用，並進行整體式的統計與資料分析，以便於提升本影音平台的服務品質，產品內容所用。本公司不會對特定對象進行分析或公開資料。
+						</p>
+
+						<p class="fs-5 fw-bold mb-2">※ 特別注意事項：</p>
+						<p class="fs-6 fw-light mb-5">
+						● 與第三者共用個人資料之政策本影音平台不會任意揭露，出售，交換或轉讓任何您及您子女的任何非公開性個人資料給其他團體個人或私人企業。但符合以下條件時，本網站會在本政策原則之下，與第三者共用您及您子女的個人資料。</br>
+						● 為了提供您完整的服務，我們會在與其簽訂機密同意保護條約的條件下，與配合的相關合作夥伴（如負責製作網站的委外廠商，負責處理會員資料處理的資訊委外廠商，及市場調查廠商等）共用您及您子女的資料。這些相關合作夥伴對我們有保密的職責且亦承諾將該您及您子女的資料加以保密。</br>
+						● 為了提供您其他服務或優惠，需要與提供該服務或優惠之第三者共用您及您子女的資料時，本影音平台會在活動時提供充分說明，並且在資料蒐集時明白告知，您可以自由選擇是否接受這項服務或優惠。</br>
+						● 司法單位因公眾安全或相關職權機關依職務需要之調查或使用，要求本影音平台公開特定個人資料時，本影音平台將視司法單位相關職權機關合法正式的程序，以及對本影音平台所有使用者安全考量下做可能必要的配合。</br>
+						● 當有人可能違反本影音平台服務條款，或者可能損害或妨礙本影音平台，本影音平台使用者或相關第三人之權益時，若本影音平台有理由相信揭露此資料係為辨識，連絡或對該人採取法律行動所必要者本網站得揭露使用者之個人資料。此外，基於善意相信揭露為法律需要，或為維護和改進產品，服務而用於管理或其他目的時，本影音平台亦得揭露或讀取使用者之個人資料。</br>
+						● 由於本公司隸屬於跨國性集團，因此，針對日常營運事項，將無法避免在集團內各公司間，進行您與您子女個人資料的國際傳輸。
+						</p>
+
+						<p class="fs-6 fw-light mb-5">
+						在使用者同意下提供的個人資料 在某些情況下，例如當您要求加入會員，使用電子郵件服務或其他服務，及參加其他活動時，本影音平台或其合作對象可能會要求您登錄您及您子女的個人資料，以便於和您聯繫，完成交易，提供服務，或處理訂閱程序；在此等情況下，本影音平台或其合作對象將明白告知您此等事實，如果您選擇不接收任何廣告或聯繫資訊，本影音平台將完全予以尊重。
+						</p>
+
+						<p class="fs-5 fw-bold mb-2">個人資料的修改</p>
+						<p class="fs-6 fw-light mb-3">
+						我們將提供您查閱、修改您個人資料以及刪除登錄裝置之權力。當您註冊成為巧連智數位典藏學習網會員後，您若發現個人資料不正確或有變更的時候，可以隨時透過本影音平台利用您的帳密登入後，修改您所輸入的任何個人資料（包括登入密碼、聯絡基本資料、登錄裝置）。若您有個人資料請求查詢、請求閱覽、請求複製本、請求補充、更正、停止蒐集、處理或利用或刪除等問題，請您與本公司客服部門聯繫相關事宜，本公司將依公司規定之相關作業要點儘速辦理。公司提醒您，您負有提供正確且即時之個人資料之義務，倘若您提供予本公司之個人資料，其內容有不正確或不完整之情況，可能會影響您的權益，且您需負擔相關之法律責任。
+						</br></br>
+						您及您子女個人的隱私權，本影音平台會絕對尊重並予以保護。非經您本人同意不會自行修改或刪除任何個人資料及檔案。除非經過您事先同意或符合以下情況始得為之：
+						</p>
+
+						<p class="fs-5 fw-bold mb-2">經由合法的途徑。</p>
+						<p class="fs-6 fw-light mb-5">
+						● 違反本影音平台規定事項時。</br>
+						● 保護或防衛相關網路民眾的權力或所有權。</br>
+						● 為保護本影音平台各相關單位之權益。
+						</p>
+
+						<p class="fs-5 fw-bold mb-2">個人資料的安全保護</p>
+						<p class="fs-6 fw-light mb-5">
+						本影音平台在符合隱私權保護政策的規範下，將盡全力以合理之技術及程序，保障您及您子女的個人資料之安全性（不會被誤用，未經授權的存取或公開，變更，破壞或遺失）。您在本影音平台的相關資料均受到嚴密的保護。
+						</p>
+
+						<p class="fs-5 fw-bold mb-2">您個人資料的保護措施：</p>
+						<p class="fs-6 fw-light mb-5">
+						● 本影音平台不會任意揭露，出售，交換或轉讓任何您及您子女的任何非公開性個人資料給其他團體、個人或私人企業。</br>
+						● 您及您子女的個人資料之取得必於本影音平台上經由您被明白受告知並願意提供的情況，或您主動連絡下，進行取得或利用。</br>
+						● 我們所有從業人員對於含括您及您子女未公開於巧連智數位典藏學習網上的個人資料，皆會善盡保密之義務。</br>
+						● 我們為防止外人非法入侵資料庫系統，我們已裝設防火牆系統，並有專人負責資料庫之管理及維護工作。
+						</p>
+
+						<p class="fs-5 fw-bold mb-2">個人資料之自我保護措施：</p>
+						<p class="fs-6 fw-light mb-5">
+						● 為保障您及您子女的權益及隱私，請妥善保管您及您子女的任何個人資料，不要將任何個人資料提供給其他人。</br>
+						● 凡成為本影音平台會員，皆有義務維持並更新其所屬個人資料，並確保該資料為正確，最新以及完整。若您提供任何錯誤或不實的資料，本影音平台有權拒絕您享用巧連智數位典藏學習網之全部或部份服務。</br>
+						● 並提醒您，無論何時您自願於本影音平台上透露您及您子女的個人資料，如透過電子郵件或訊息傳遞，該資料均可能會被他人蒐集和使用。請您審慎考慮。</br>
+						● 一旦我們收到您傳送的資料，本影音平台會盡最大努力確保以合理之技術及程序，保障您儲存於系統中的所有您及您子女的個人資料的安全性。由於網際網路資料的傳輸不能保證百分之百的安全，儘管我們努力保護您及您子女的個人資料安全，仍無法確保或保證您傳送給我們的或接收從我們的服務傳送出資料的安全。此風險並不在本影音平台承擔的責任範圍內。
+						</p>
+
+						<p class="fs-5 fw-bold mb-2">隱私權保護政策的修訂與諮詢：</p>
+						<p class="fs-6 fw-light mb-5">
+						我們將會視因應科技發展趨勢，相關法規之修訂或其他環境變遷等因素需要，修改本網站所提供的隱私權保護聲明，以落實保障顧客隱私權之立意。而當我們完成修改時，將會張貼告示於本影音平台公告上。
+						</br></br>
+						如您對於本影音平台中的隱私權保護政策有任何疑問或意見，或有個人資料蒐集，運用，修改等相關問題，歡迎您可以我們聯繫，我們將儘速為您處理。
+						</br></br>
+						客服專線：0800-000-405（行動電話請改撥 02-2312-0405）</br>
+						服務時間：每週一至週五09:00~17:30。
+						</p>
+					</div>
+
+					<div>
+						<a href="serial-number03-1.html" class="btn-square orange ">確定</a>
+					</div>
+				</div>
+			</div>
+		</div>
+  </main>
+
+  <!-- 頁尾 -->
+  <footer>
+  	<div class="page-footer py-4"></div>
+  </footer>
+  
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- 自定義 JS -->
+  <script src="js/public.js"></script>
+  <script src="js/unit.js"></script>
+</body>
+</html>

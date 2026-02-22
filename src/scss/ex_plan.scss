@@ -1,0 +1,66 @@
+@use "sass:math";
+@import "_/_Lib";
+@import "_/Core";
+@import "Lalilo";
+@import "_/Bootstrap";
+@import "public";
+
+
+$primary: #fbb03b; // 橘色
+$primary2: #d89032; // 深橘色
+$success: #4CAF50; // 綠色
+$white: #FFFFFF;
+$gray-700: #495057;
+
+$pink: #f09aa8;
+$pink2: #dd7a8d;
+
+$blue: #56ace2;
+$blue2: #3e99c6;
+
+$green: #75cc92;
+$green2: #4aaf64;
+
+$purple: #c38ccf;
+$purple2: #bd7fcc;
+
+
+$border-radius: 1rem;
+
+$brown: #6e4435; // 咖啡色
+$yellow-light: #fffdf9;
+
+.w-2 {
+  width: 2%;
+}
+
+.text-use {
+  color: #6e4435;
+  font-size: .8rem;
+  margin: 0;
+
+  a {
+    color: #4285f4;
+  }
+}
+
+// 斜線按鈕
+.title-slash-blue {
+  display: inline-block;
+  width: 100%;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: white;
+  @include border-radius(30px);
+  padding: .3rem .5rem .5rem .5rem;
+  text-shadow: rgba(240, 141, 62, .8) 1px 2px 2px;
+  box-shadow: 0 -5px 0 $primary2 inset;
+  background: repeating-linear-gradient(
+                    130deg, 
+                    $primary 0 13px,
+                    rgba(250, 189, 94, 1.00) 0 25px);
+}
+
+
+
+

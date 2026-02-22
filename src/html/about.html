@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>巧連智 - 數位典藏學習網 - 巧虎卡通</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <!-- 自定義樣式 -->
+    <link href="css/unit.css" rel="stylesheet">
+    <link href="css/signup.css" rel="stylesheet">
+
+    <!-- 共用外部 font 檔案 -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <header>
+	  <!-- 導航欄 -->
+		<div class="navbar-section">
+			<div class="container">
+				<nav class="navbar navbar-expand-lg navbar-light navbar-gradient">
+					<!-- 左側區域：品牌和社群連結 -->
+					<div class="col-6 col-lg-5">
+						<div class="navbar-left">
+							<a class="navbar-brand d-none d-lg-block" href="index.html" title="巧連智">
+								<img src="images/s-logo.svg" alt="巧連智" height="50">
+							</a>
+
+							<div class="social-links">
+								<a href="https://www.facebook.com/BenesseTaiwan/?fref=ts" class="social-link" target="_black"><img src="images/fb.svg"></a>
+								<a href="https://www.youtube.com/channel/UCnjadOj5qlKXsTAXPSwc67A/featured" class="social-link" target="_black"><img src="images/youtube.svg"></a>
+								<a href="https://www.benesse.com.tw/html/line/index.html" class="social-link" target="_black"><img src="images/line.svg"></a>
+								<a href="https://www.benesse.com.tw/html/digit/app.html" class="social-link" target="_black"><img src="images/app.svg"></a>
+							</div>
+						</div>
+					</div>
+
+					<!-- 右側區域：導航選項 -->
+					<div class="col-6 col-lg-7">
+						<div class="navbar-right justify-content-end">
+							<div class="action-buttons">
+								<a href="#" class="nav-link d-none d-lg-block">關於數位典藏學習網</a>
+								<a href="#" class="nav-link d-none d-lg-block">訂閱方案</a>
+	              <a href="#" class="nav-link d-none d-lg-block">常見問題</a>
+								<a href="#" class="fs-6 nav-btn nav-btn-login">登入</a>
+								<a href="#" class="fs-6 nav-btn nav-btn-search d-none d-lg-block" data-bs-toggle="modal" data-bs-target="#searchbox">搜尋</a>
+							</div>
+
+	            <!-- 手機-搜尋按鈕 -->
+	            <button class="btn btn-mobile-menu d-lg-none me-2" data-bs-toggle="modal" data-bs-target="#searchbox"><i class="bi bi-search align-baseline"></i>
+	            </button>
+	            <!-- 手機-list按鈕 -->
+							<button class="btn btn-mobile-menu d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+								<i class="bi bi-list align-baseline"></i>
+							</button>
+
+	            <!-- 手機選單 -->
+							<div class="offcanvas offcanvas-end d-lg-none" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+								<div class="offcanvas-header">
+									<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+								</div>
+								<div class="offcanvas-body">
+									<div class="action-buttons me-0">
+										<a href="#" class="nav-btn  btn-square orange w-100">登入</a>
+									</div>
+
+									<div class="action-links text-start">
+										<a href="#" class="nav-link brown"><img src="images/star-p.svg" class="w-10 me-2">關於數位典藏學習網</a>
+										<a href="#" class="nav-link brown"><img src="images/star-pur.svg" class="w-10 me-2">訂閱方案</a>
+	                  <a href="#" class="nav-link brown"><img src="images/star-pur.svg" class="w-10 me-2">常見問題</a>
+									</div>
+
+									<div class="action-category">
+										<div class="category-item my-2">
+											<a href="#">
+												<img src="images/s-menu01.png" alt="月刊有聲書" class="img-fluid">
+											</a>
+										</div> 
+										<div class="category-item my-2">
+											<a href="#">
+												<img src="images/s-menu02.png" alt="月刊有聲書" class="img-fluid">
+											</a>
+										</div> 
+										<div class="category-item my-2">
+											<a href="#">
+												<img src="images/s-menu03.png" alt="月刊有聲書" class="img-fluid">
+											</a>
+										</div> 
+										<div class="category-item my-2">
+											<a href="#">
+												<img src="images/s-menu04.png" alt="月刊有聲書" class="img-fluid">
+											</a>
+										</div> 
+										<div class="category-item my-2">
+											<a href="#">
+												<img src="images/s-menu05.png" alt="月刊有聲書" class="img-fluid">
+											</a>
+										</div> 
+									</div>
+
+									<div class="action-social text-center">
+										<a href="https://www.facebook.com/BenesseTaiwan/?fref=ts" class="social-link" target="_black"><img src="images/fb.svg"></a>
+	                  <a href="https://www.youtube.com/channel/UCnjadOj5qlKXsTAXPSwc67A/featured" class="social-link" target="_black"><img src="images/youtube.svg"></a>
+	                  <a href="https://www.benesse.com.tw/html/line/index.html" class="social-link" target="_black"><img src="images/line.svg"></a>
+	                  <a href="https://www.benesse.com.tw/html/digit/app.html" class="social-link" target="_black"><img src="images/app.svg"></a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</nav>
+			</div>
+		</div>
+
+		<!-- 標題區域 -->
+		<div class="hero-section text-center">
+
+			<div class="container">
+				<h1>
+					<a href="index.html"><img src="images/logo.webp" alt="巧連智數位典藏學習網" class="img-fluid"></a>
+				</h1>
+			</div>
+			<div class="cloud-bg">
+				<img src="images/cloud-s.webp" alt="雲朵" class="img-fluid">
+			</div>
+		</div>
+	</header>
+
+  <!-- 主要內容 -->
+  <main class="about">
+  	<div class="container">
+		<div class="bg-color"></div>
+		<div class="title-section">
+			<div class="row justify-content-center">
+				<div class="col-10 col-md-8 col-lg-6 col-xl-5">
+					<div class="about-img-box">
+						<img src="images/C_about01.png" alt="巧虎" class="about-img">
+					</div>
+					<div class="about-title">
+						<h2 class="rounded-pill border-5 p-3">關於巧連智數位典藏學習網</h2>
+					</div>
+					<!-- 背景顏色 -->
+				</div>
+			</div>
+		</div>
+
+		<!-- 關於我們區塊 -->
+		<section class="about-section pb-5">
+			<div class="row justify-content-center">
+				<div class="col-10 col-md-8 col-lg-6 col-xl-5 position-relative">
+					<div class="about-img-box left-img">
+						<img src="images/C_about02.png" alt="巧虎" class="about-img">
+					</div>
+					<div class="content-box p-4 rounded-4 border-5">
+						<p class="text-start mb-3">2024年是巧連智在台灣的35週年，這不僅是慶祝的時刻，也是反思與轉型的契機。作為全台最受歡迎的兒童與親子刊物，巧連智自創刊以來，已出版超過1萬本書籍，陪伴了300萬位孩童的成長。巧虎更是成為了父母教養的最佳幫手，無論是在學習還是生活中，都為家庭帶來了無數的歡笑與啟發。</p>
+						<p class="text-start mb-3">在規劃會員訂閱制的過程中，巧連智充分聽取了家長和孩子們的寶貴回饋，以確保我們的內容更符合親子教養的需求。透過「主題式學習劇場有聲書」獨特的聽學方式，讓擔心孩子用眼過度、太依賴3C產品的父母，能夠放心讓孩子使用。</p>
+						<p class="text-start mb-3">此外，我們的有聲學習資料庫不僅適合學齡前的孩子，還針對小學生提供了豐富的教材。例如，我們的內容包括「閱讀橋梁書」、「讀本有聲書」、「英語律動館」、「瘋狂故事屋」、「數學動腦城」、「自然科學院」等，這些都能幫助孩子在不同的學習領域中獲得知識和技能。我們的目標是讓每一位小朋友都能在輕鬆愉快的環境中學習，激發他們的創造力和探索精神。</p>
+						<p class="text-start mb-3">巧連智數位典藏的成立，標誌著我們在數位化教育領域的一次重要嘗試。我們希望透過這個平台，讓每個家庭都能夠輕鬆獲得高品質的學習資源，並在互動中促進親子關係的發展。未來，我們將持續努力，為孩子們的成長提供更多元、更豐富的學習選擇，讓每一位小朋友都能在巧連智的陪伴下，快樂成長、茁壯成長。</p>
+					</div>
+					<div class="about-img-box right-img">
+						<img src="images/C_about03.png" alt="巧虎" class="about-img">
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+	
+  </main>
+
+  <!-- 頁尾 -->
+  <footer>
+  	<div class="page-footer py-4"></div>
+  </footer>
+
+  
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- 自定義 JS -->
+  <script src="js/public.js"></script>
+  <script src="js/unit.js"></script>
+</body>
+</html>
