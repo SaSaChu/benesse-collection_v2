@@ -62,5 +62,82 @@ $yellow-light: #fffdf9;
 }
 
 
+.group-plan-info {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
 
+  .plan-years {
+    color: #7a4a38;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: 1px;
+  }
+
+  .plan-price {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: #7a4a38;
+
+    .price-label {
+      font-size: 1rem;
+      font-weight: 700;
+      line-height: 1.2;
+      margin-bottom: 8px;
+    }
+
+    .price-value {
+      display: flex;
+      align-items: flex-end;
+      line-height: 1;
+
+      .number {
+        font-size: 3rem;
+        font-weight: 900;
+        letter-spacing: 1px;
+      }
+
+      .unit {
+        margin-left: 10px;
+        font-size: 1rem;
+        font-weight: 700;
+        line-height: 1.1;
+        transform: translateY(-8px);
+      }
+    }
+  }
+}
+
+.price3 {
+  display: flex;
+  justify-content: flex-end;
+  width: 50%;
+  align-items: center;
+  font-weight: bolder;
+  font-size: 3rem;
+  color: $brown;
+  text-align: right;
+  position: relative;
+  margin-top: 20px;
+
+  &:before {
+    display: inline-block;
+    content: attr(title);
+    color: $brown;
+    font-size: 1rem;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+
+  &:after {
+    display: inline-block;
+    content: "元";
+    color: $brown;
+    font-size: 1rem;
+    padding-left: 10px;
+  }
+}
 

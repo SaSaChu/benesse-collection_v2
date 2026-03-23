@@ -476,8 +476,13 @@ header {
 }
 .numH {
   height: 95px;
-  font-size: 3rem;
+  font-size: 1rem;
   text-align: center;
+
+  @include media-breakpoint-down(md) {
+    height: 55px;
+    font-size: 3rem;
+  }
 }
 input[type=number]::-webkit-outer-spin-button,
 input[type=number]::-webkit-inner-spin-button {
