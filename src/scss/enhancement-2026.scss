@@ -1,0 +1,509 @@
+@use "sass:math";
+@import "_/_Lib";
+@import "_/Core";
+@import "Lalilo";
+@import "_/Bootstrap";
+@import "public.scss";
+
+
+$primary: #fbb03b; // 橘色
+$primary2: #d89032; // 深橘色
+$success: #4CAF50; // 綠色
+$white: #FFFFFF;
+$gray-700: #495057;
+
+$pink: #f09aa8;
+$pink2: #dd7a8d;
+
+$blue: #56ace2;
+$blue2: #3e99c6;
+
+$green: #75cc92;
+$green2: #4aaf64;
+
+$purple: #c38ccf;
+$purple2: #bd7fcc;
+
+
+$border-radius: 1rem;
+
+$brown: #6e4435; // 咖啡色
+$yellow-light: #fffdf9;
+
+// 斷點會員中心
+$breakpoints: (
+  xxs: 320px,
+  xs: 375px,
+  s: 480px,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  2xl: 1440px,
+  3xl: 1920px,
+
+);
+
+// Mixins
+@mixin media-breakpoint-up($breakpoint) {
+  @media (min-width: map-get($breakpoints, $breakpoint)) {
+    @content;
+  }
+}
+
+@mixin media-breakpoint-down($breakpoint) {
+  @media (max-width: map-get($breakpoints, $breakpoint)) {
+    @content;
+  }
+}
+
+@mixin hover-scale {
+  transition: all .3s ease-in-out;
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
+
+/* 首頁新增浮動icon-主題週 */
+.fixed-topic-btn {
+  position: fixed;
+  right: 20px;
+  top: 150px;
+  z-index: 10;
+
+  a {
+    display: block;
+  }
+
+  img {
+    display: block;
+    width: 150px;
+    height: auto;
+    transition: .3s;
+  }
+
+  &:hover {
+    img {
+      transform: scale(1.05);
+    }
+  }
+}
+
+@media (max-width: 1180px) {
+  .fixed-topic-btn {
+    top: 450px;
+  }
+}
+
+@media (max-width: 768px) {
+  .fixed-topic-btn {
+    position: fixed;
+    right: 10px;
+    top: 375px;
+    z-index: 10;
+
+    img {
+      width: 120px;
+      height: auto;
+    }
+  }
+}
+
+@media (max-width: 935px) and (orientation: landscape) {
+  .fixed-topic-btn {
+    top: 15%;
+    right: 8px;
+
+    img {
+      width: 90px;
+    }
+  }
+}
+
+/* 中手機 */
+@media (max-width: 430px) {
+  .fixed-topic-btn {
+    top: 275px;
+  }
+}
+
+/* 小手機 */
+@media (max-width: 375px) {
+  .fixed-topic-btn {
+    top: 250px;
+  }
+}
+
+@media (max-width: 991px) {
+  .navbar {
+    z-index: 1055 !important;
+  }
+
+  .fixed-topic-btn {
+    z-index: 10;
+  }
+}
+
+/* page06-主題週內頁 */
+.border-Lblue {
+  height: 3px;
+  content: '';
+  background-repeat: repeat-x;
+}
+
+.border-Lblue {
+  background-image: url(../images/doll-Lblue.svg);
+}
+
+.list-bg-unit06 {
+  background-color: #eef3fc;
+}
+
+.title-slash08 {
+  display: inline-block;
+  width: 100%;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: white;
+  @include border-radius(30px);
+  padding: .3rem .5rem .5rem .5rem;
+  text-shadow: rgba(130, 170, 224, 1) 1px 2px 2px;
+  box-shadow: 0 -5px 0 #548ee2 inset;
+  background: repeating-linear-gradient(
+                    130deg, 
+                    #82aaf4 0 13px,
+                    rgba(130, 170, 244, .8) 0 25px);
+}
+
+
+.page08 {
+  .age-section {
+    .age-item {
+      &:hover, &.active { 
+        a {
+          color: $primary;
+        }
+      }
+
+      .age-item-img {
+        > img {
+          // transform 控制圖片眼睛對齊文字中間
+          transform: translateY(-35%);
+        }
+      }
+    }
+  }
+
+  .main-section {
+    .sidebar-swiper {
+
+      p.Lblue {
+        color: #82aaf4;
+      }
+
+      .form-select {
+        &.Lblue {
+          color: #82aaf4;
+          border: 2px solid #82aaf4;
+          background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%2382aaf4' stroke-linecap='round' stroke-linejoin='round' stroke-width='4' d='m2 5 6 6 6-6'/%3e%3c/svg%3e");
+        
+          &:focus {
+            color: #82aaf4  !important;
+            border-color:#82aaf4 !important;
+          }
+        }
+      }
+
+      .sidebar-item {
+
+        &.Lblue {
+          &.active, &:hover {
+            background-color: #82aaf4;
+          }
+        }
+      }
+    }
+  } 
+}
+
+.border-Lblue-bottom {
+  border-bottom:3px solid #82aaf4;
+}
+
+.nav-pills {
+
+  &.Lblue {
+    .nav-link {
+
+      &.active {
+        background-color: #82aaf4 !important;
+      }
+    }
+  }
+}
+
+.theme-box {
+  display: block;
+  margin-top: .5rem;
+  text-align: start;
+  
+  > a {
+    display: block;
+    font-size: 1rem;
+    color: $brown;
+
+    &:first-child {
+      font-weight: bolder;
+    }
+
+    &:hover {
+      text-decoration: underline !important;
+    }
+  }
+}
+
+.badge-theme {
+  color: #cfa37b;
+  background-color: #faefe6;
+}
+
+h2.Lblue {
+  position: relative;
+  z-index: 1;
+
+  &:before, &:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-image: url(../images/doll-Lblue.svg);
+    background-position: center;
+    background-repeat: repeat-x;
+    opacity: 0.5;
+    width: 40%;
+    height: 3px;
+    pointer-events: none;
+
+    @include media-breakpoint-down(md) {
+      width: 28%;
+    }
+  }
+
+  &:before {
+    left: 0;
+  }
+
+  &:after {
+    right: 0;
+  }
+}
+
+.obj-image-2 {
+  max-width: 25%;
+  @include media-breakpoint-down(md) {
+    max-width: 40%;
+  }
+}
+
+/* ========================================
+   page06 主題介紹區
+======================================== */
+
+.theme-intro-card {
+  position: relative;
+  display: flex;
+  gap: 32px;
+  padding: 24px;
+
+  background: #eef1f8;
+  border-radius: 20px;
+
+  &__image {
+    flex-shrink: 0;
+
+    img {
+      width: 400px;
+      border: 6px solid #5f95e9;
+      border-radius: 24px;
+    }
+  }
+
+  &__content {
+    text-align: start;
+    flex: 1;
+  }
+
+  &__tag {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 12px;
+
+    span:first-child {
+      padding: 4px 12px;
+      border-radius: 30px;
+      background: #82aaf4;
+      color: #fff;
+    }
+
+    span:last-child {
+      color: #82aaf4;
+      font-weight: 700;
+    }
+  }
+
+  h2 {
+    color: #6f4a3c;
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 8px;
+  }
+
+  h3 {
+    color: #6f4a3c;
+    font-size: 24px;
+    margin-bottom: 12px;
+  }
+
+  &__date {
+    color: #5f95e9;
+  }
+
+  p {
+    color: $brown;
+    line-height: 1.5;
+  }
+
+  &__school {
+    position: absolute;
+    right: 24px;
+    bottom: 16px;
+
+    img {
+      width: 90px;
+    }
+  }
+}
+
+.btn-theme-view {
+  display: inline-block;
+  padding: 12px 30px;
+  border-radius: 30px;
+  background: #f6b13f;
+  color: #fff;
+  text-decoration: none;
+
+  &:hover {
+    background: rgba(246, 177, 63, .9);
+  }
+}
+
+/* ========================================
+   主題小提醒
+======================================== */
+
+.theme-reminder {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  text-align: start;
+
+  padding: 20px;
+  margin-top: 40px;
+
+  background: #f8efe8;
+  border-radius: 20px;
+
+  &__image {
+    img {
+      width: 195px;
+    }
+  }
+
+  &__content {
+    flex: 1;
+
+    h3 {
+      color: #7a4f3c;
+      margin-bottom: 8px;
+    }
+
+    p {
+      color: $brown;
+      margin: 0;
+      line-height: 1.5;
+    }
+  }
+
+  &__favorite {
+    button {
+      padding: 12px 32px;
+      border: 1px solid #d4c3b7;
+      border-radius: 40px;
+      background: #fff;
+      color: #7a4f3c;
+
+      &:hover {
+        border: 1px solid $orange;
+        background: $orange;
+        color: #fff;
+      }
+    }
+  }
+}
+
+/* ========================================
+   Mobile
+======================================== */
+
+@media (max-width: 991px) {
+
+  .theme-intro-card {
+    display: block;
+    padding: 16px;
+
+    &__image {
+      margin-bottom: 20px;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    h2 {
+      font-size: 36px;
+    }
+
+    &__school {
+      right: 12px;
+      bottom: 12px;
+
+      img {
+        width: 70px;
+      }
+    }
+  }
+
+  .theme-reminder {
+    display: block;
+    text-align: center;
+
+    &__image {
+      margin-bottom: 12px;
+    }
+
+    &__favorite {
+      margin-top: 16px;
+    }
+  }
+}
+
+
+
+.theme-sidebar-panel {
+  display: none;
+
+  &.is-active {
+    display: block;
+  }
+}
