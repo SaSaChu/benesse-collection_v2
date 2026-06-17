@@ -507,3 +507,166 @@ h2.Lblue {
     display: block;
   }
 }
+
+
+/* 主題css區域 */
+.h-40 {
+  height: 40px;
+}
+
+@media (max-width: 991px) {
+  .featured-section {
+    &.theme-main-bg {
+      background-image: url('../images/theme/spring/theme-main-mobile.png') !important;
+      background-size: 100% auto;
+      padding-bottom: 110px;
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  .featured-section {
+    &.theme-main-bg {
+      padding-bottom: 90px;
+    }
+  }
+}
+
+.featured-section {
+
+  &.theme-main-bg {
+    position: relative;
+
+    background-image: url('../images/theme/spring/theme-main-pc.png');
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: 100% auto;
+
+    padding-bottom: 130px;
+    margin-bottom: -1px;
+  }
+
+  &.theme-spring {
+
+    .obj-image {
+      max-width: 25%;
+
+      @media (max-width: 991px) {
+        max-width: 65%;
+      }
+
+    }
+
+    h2 {
+      &:before, &:after {
+        @media (max-width: 991px) {
+          width: 30%;
+        }
+
+        @media (max-width: 575px) {
+          width: 20%;
+        }
+
+        width: 35%;
+        background-image: url(../images/theme/spring/doll-theme.svg);
+      }
+    }
+  }
+
+  .swiper {
+    &.theme-spring {
+      &.featured-book-swiper {
+        .featured-item {
+          border: 4px solid #b9e68e;
+          background-color: white;
+        }
+
+        .swiper-button-prev,
+        .swiper-button-next {
+          color: #b9e68e;
+        }
+
+        .swiper-pagination {
+          .swiper-pagination-bullet-active {
+            background-color: #b9e68e;
+          }
+        }
+      }
+
+      &.featured-video-swiper {
+        .featured-item {
+          border: 4px solid #f09aa8;
+          background-color: white;
+        }
+
+        .swiper-button-prev,
+        .swiper-button-next {
+          color: #f09aa8;
+        }
+
+        .swiper-pagination {
+          .swiper-pagination-bullet-active {
+            background-color: #f09aa8;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+.theme-top-header {
+  min-height: 300px;
+  padding-bottom: 40px;
+
+  background-image: url('../images/theme/spring/theme-top-pc.png');
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: 100% auto;
+
+  .category-section {
+    background-color: transparent !important;
+  }
+
+  .hero-section {
+    &:after {
+      background-color: transparent !important;
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .theme-top-header {
+    min-height: 0;
+
+    background-image: url('../images/theme/spring/theme-top-mobile.png');
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 100% auto;
+
+    padding-bottom: 0;
+  }
+}
+
+/* 小手機可微調高度 */
+@media (max-width: 575px) {
+  .theme-top-header {
+  }
+}
+
+
+.carousel-section {
+
+  &.theme-spring {
+
+    background-color: #f5c3c6;
+
+    .container {
+      background-image: url(../images/theme/spring/footer-bg.webp);
+    }
+  }
+}
+
+
+
