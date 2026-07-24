@@ -332,6 +332,8 @@ h2.Lblue {
   &__content {
     text-align: start;
     flex: 1;
+    overflow-wrap: anywhere;
+    word-break: break-word;
   }
 
   &__tag {
