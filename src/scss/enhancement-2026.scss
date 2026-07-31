@@ -323,17 +323,31 @@ h2.Lblue {
     flex-shrink: 0;
 
     img {
-      width: 400px;
+      width: 490px;
       border: 6px solid #5f95e9;
       border-radius: 24px;
     }
   }
 
-  &__content {
+  /*&__content {
     text-align: start;
     flex: 1;
     overflow-wrap: anywhere;
     word-break: break-word;
+  }*/
+
+  &__content {
+    flex: 1;
+    text-align: start;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+  }
+
+  &__btn {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    margin-top: 20px;
   }
 
   &__tag {
@@ -388,7 +402,9 @@ h2.Lblue {
 }
 
 .btn-theme-view {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   padding: 12px 30px;
   border-radius: 30px;
   background: #f6b13f;
@@ -397,6 +413,7 @@ h2.Lblue {
 
   &:hover {
     background: rgba(246, 177, 63, .9);
+    color: #fff;
   }
 }
 
@@ -463,6 +480,10 @@ h2.Lblue {
   .theme-intro-card {
     display: block;
     padding: 16px;
+
+    &__content {
+      padding-right: 0;
+    }
 
     &__image {
       margin-bottom: 20px;
@@ -1285,7 +1306,7 @@ h2.Lblue {
 
 .theme-top-header {
   min-height: 300px;
-  padding-bottom: 40px;
+  /*padding-bottom: 40px;*/
   background-repeat: no-repeat;
   background-position: center top;
   background-size: 100% auto;
