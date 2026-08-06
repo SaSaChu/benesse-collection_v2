@@ -69,7 +69,7 @@ $breakpoints: (
 .fixed-topic-btn {
   position: fixed;
   right: 20px;
-  top: 150px;
+  top: 28%;
   z-index: 10;
 
   a {
@@ -1498,4 +1498,30 @@ h2.Lblue {
 }
 
 
+/* 主題上方文字 */
+.theme-black-link {
+  color: rgba(0, 0, 0, 1.0) !important;
+  text-shadow: rgba(48, 56, 65, 0) 1px 2px 2px !important;
 
+  &:first-of-type, &:nth-of-type(2) {
+    position: relative;
+
+    &:after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      right: -0.5rem;
+      transform: translateY(-50%) translateX(50%);
+      display: inline-block;
+      width: 4px;
+      height: 4px;
+      border-radius: 50%;
+      background-color: rgba(0, 0, 0, 1.0) !important;
+    }
+  }   
+
+  &:hover {
+    color: #0a6fb5 !important;;
+    text-shadow: rgba(0, 0, 0, .0) 1px 2px 2px;
+  }
+}
