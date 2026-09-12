@@ -65,6 +65,30 @@ $breakpoints: (
 }
 
 
+
+    
+
+@include media-breakpoint-down(lg) {
+	.page03 {
+
+		.floating-new-icon {
+			width: 52px;
+
+			&--sidebar {
+				right: 6px;
+			}
+
+			&--content {
+				right: 12%;
+				bottom: 20px;
+			}
+		}
+	}
+}
+
+
+
+
 // 分類區塊
 .category-col {
 
@@ -137,6 +161,7 @@ main {
 		.main-section {
 			.sidebar-swiper {
 				.sidebar-item {
+
 					&.active, &:hover {
 						background-color: $pink;
 					}
@@ -160,7 +185,7 @@ main {
 		}
 	}
 
-	&.page03 {
+	/*&.page03 {
 		.main-section {
 			.sidebar-swiper {
 				.sidebar-item {
@@ -178,7 +203,93 @@ main {
 				}
 			}
 		}	
+	}*/
+
+	&.page03 {
+
+		@include media-breakpoint-down(md) {
+
+		.main-section {
+
+			.sidebar-swiper {
+
+				.sidebar-item {
+					overflow: visible;
+				}
+			}
+		}
 	}
+
+
+
+	// -----------------------------------
+	// NEW icon 共用
+	// -----------------------------------
+	.floating-new-icon {
+		position: absolute;
+		z-index: 5;
+		display: block;
+		width: 50px;
+		height: auto;
+		pointer-events: none;
+
+		// 左側選單
+		&--sidebar {
+			top: 50%;
+			right: 8px;
+			transform: translateY(-50%);
+
+			@include media-breakpoint-down(md) {
+					width: 52px;
+
+					top: -18px;
+					right: -8px;
+
+					transform: none;
+					z-index: 20;
+				}
+		}
+
+		// 影片 / 內容卡片
+		&--content {
+			right: 15%;
+			bottom: 24px;
+			transform: translate(50%, 50%);
+		}
+	}
+
+
+	// -----------------------------------
+	// 左側 sidebar NEW
+	// -----------------------------------
+	.sidebar-swiper {
+
+		.sidebar-item {
+			position: relative;
+
+			&.has-new-icon {
+
+				a {
+					position: relative;
+				}
+			}
+		}
+	}
+
+
+	// -----------------------------------
+	// 內容卡片 NEW
+	// -----------------------------------
+	.content {
+
+		.item-3 {
+
+			&.has-new-icon {
+				position: relative;
+			}
+		}
+	}
+}
 
 	&.page04 {
 		.main-section {
@@ -543,6 +654,7 @@ main {
 				}
 
 				&:hover, &.active {
+					background-color: #54a7e0;
 					.sidebar-item-img {
 						.default-img {
 							display: none;
@@ -1158,6 +1270,17 @@ main {
 					}
 				}
 
+				/*.book-name {
+					display: block;
+					margin-top: .5rem;
+					font-size: 1rem;
+					color: $brown;
+
+					&:hover {
+						text-decoration: underline !important;
+					}
+				}*/
+
 				.book-name {
 					display: block;
 					margin-top: .5rem;
@@ -1167,8 +1290,29 @@ main {
 					&:hover {
 						text-decoration: underline !important;
 					}
+
+					&.has-new {
+				    display: inline-flex;
+				    align-items: center;
+				    justify-content: center;
+				    position: relative;
+
+				    &::after {
+				      content: "";
+				      display: inline-block;
+
+				      width: 50px;
+				      height: 40px;
+				      margin-left: 8px;
+
+				      background: url("../images/icon-new-02.svg") center / contain no-repeat;
+				      flex-shrink: 0;
+				    }
+				  }
 				}
 			}
+
+
 
 			.item-5 {
 				flex: 0 0 calc(100% / 5 - 0.5rem);
